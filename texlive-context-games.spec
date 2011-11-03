@@ -1,5 +1,11 @@
+# revision 23167
+# category ConTeXt
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-context-games
-Version:	20111101
+Version:	20111103
 Release:	1
 Summary:	TeXLive context-games package
 Group:		Publishing
@@ -49,6 +55,7 @@ TeXLive context-games package.
 %{_texmfdistdir}/tex/context/third/games/t-games.tex
 %doc %{_texmfdistdir}/doc/context/third/games/README
 %doc %{_texmfdistdir}/doc/context/third/games/games-doc.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ TeXLive context-games package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
