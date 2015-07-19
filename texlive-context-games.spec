@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-context-games
 Version:	20111103
-Release:	9
+Release:	10
 Summary:	TeXLive context-games package
 Group:		Publishing
 URL:		http://tug.org/texlive
